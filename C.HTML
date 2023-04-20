@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>C PROGRAMMING TUTORIALS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- THE CSS -->
+    <style>
+      details summary::-webkit-details-marker {
+        display: none;
+      }
+
+      details[open] summary {
+        background: blue;
+        color: white;
+      }
+
+      details[open] summary::after {
+        content: "-";
+      }
+
+      details[open] summary ~ * {
+        animation: slideDown 0.3s ease-in-out;
+      }
+
+      details[open] summary p {
+        opacity: 0;
+        animation-name: showContent;
+        animation-duration: 0.6s;
+        animation-delay: 0.2s;
+        animation-fill-mode: forwards;
+        margin: 0;
+      }
+
+      @keyframes showContent {
+        from {
+          opacity: 0;
+          height: 0;
+        }
+        to {
+          opacity: 1;
+          height: auto;
+        }
+      }
+      @keyframes slideDown {
+        from {
+          opacity: 0;
+          height: 0;
+          padding: 0;
+        }
+
+        to {
+          opacity: 1;
+          height: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- component -->
+    <!-- This is an example component -->
+    <div
+      class="flex items-center justify-center min-h-screen from-purple-100 via-red-300 to-indigo-500 bg-gradient-to-br"
+    >
+      <div
+        class="w-full max-w-lg px-10 py-8 mx-auto bg-white rounded-lg shadow-xl"
+      >
+        <h1 class="text-xl mb-10 text-center">
+          WELCOME TO C- PROGRAMMING LEARNING TUTORIALS
+        </h1>
+        <!-- THE ACCORDION WITH <details> <summary> HTML Tag -->
+        <details
+          class="w-full bg-white border border-blue-500 cursor-pointer mb-3"
+        >
+          <summary
+            class="w-full bg-white text-dark flex justify-between px-4 py-3 after:content-['+']"
+          >
+            WHAT IS C-PROGRAMMING ?
+          </summary>
+          <p class="px-4 py-3">
+            C is a general-purpose programming language created by Dennis
+            Ritchie at the Bell Laboratories in 1972. It is a very popular
+            language, despite being old. C is strongly associated with UNIX, as
+            it was developed to write the UNIX operating system.
+          </p>
+        </details>
+        <details
+          class="w-full bg-white border border-blue-500 cursor-pointer mb-3"
+        >
+          <summary
+            class="w-full bg-white text-dark flex justify-between px-4 py-3 after:content-['+']"
+          >
+            WHY LEARN C LANGUAGE ?
+          </summary>
+          <p class="px-4 py-3">
+            It is one of the most popular programming language in the world If
+            you know C, you will have no problem learning other popular
+            programming languages such as Java, Python, C++, C#, etc, as the
+            syntax is similar C is very fast, compared to other programming
+            languages, like Java and Python C is very versatile; it can be used
+            in both applications and technologies
+          </p>
+        </details>
+        <details
+          class="w-full bg-white border border-blue-500 cursor-pointer mb-3"
+        >
+          <summary
+            class="w-full bg-white text-dark flex justify-between px-4 py-3 after:content-['+']"
+          >
+            SYNTAX OF C ?
+          </summary>
+          <p>
+                <pre>
+                    #include <stdio.h>
+
+                        int main() {
+                          printf("Hello World!");
+                          return 0;
+                        }
+                </pre>
+          </p>
+          </details>
+      </div>
+    </div>
+  </body>
+</html>
