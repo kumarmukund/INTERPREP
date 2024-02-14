@@ -325,7 +325,7 @@
     <!-- END OF TEAM COMPONENT  -->
 
     <!-- ADMISSION FORM  -->
-  <div
+    <div
       class="min-h-screen bg-gray-800 py-6 flex flex-col justify-center sm:py-12"
     >
       <div class="relative py-3 sm:max-w-xl sm:mx-auto">
@@ -357,13 +357,50 @@
               placeholder="Email"
               name="email"
             />
+            
+            <div class="mb-5">
+              <label for="number" class="mb-3 block text-base font-medium text-[#07074D]">
+                Contact no    </label>
+                <input
+                  type="tel"
+                  name="number"
+                  id="number"
+                  placeholder="Enter your contact number "
+                  class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+                />
+             </label>
+            </div>
+            <div class="mb-5">
+              <label
+                for="address"
+                class="mb-3 block text-base font-medium text-[#07074D]"
+              >
+                Full address
+              </label>
+              <textarea
+                rows="4"
+                name="address"
+                id="address"
+                placeholder="Explain your full address"
+                class="w-full resize-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+              ></textarea>
+            </div>
 
-          <input
-              class="shadow mb-4 min-h-0 appearance-none border rounded h-64 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-              type="text"
-              placeholder="Contact No."
-              name="Contact No"
-            />
+            <div class="mb-5">
+              <label
+                for="message"
+                class="mb-3 block text-base font-medium text-[#07074D]"
+              >
+                Message
+              </label>
+              <textarea
+                rows="4"
+                name="message"
+                id="message"
+                placeholder="Explain your queries"
+                class="w-full resize-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+              ></textarea>
+            </div>
 
             <div class="flex justify-between">
               <input
@@ -379,8 +416,7 @@
           </form>
         </div>
       </div>
-    </div>
-    <!-- END OF ADMISSION FORM  -->
+    </div>    <!-- END OF ADMISSION FORM  -->
     <!-- 
     <link
       rel="stylesheet"
