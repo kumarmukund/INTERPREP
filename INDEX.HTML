@@ -5,316 +5,479 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>INTERPREP</title>
+    <link rel="shortcut icon" href="ip logo.png " type="image/x-icon " />
     <script src="https://cdn.tailwindcss.com"></script>
-     <script>
+    <link rel="stylesheet" href="contact.css" />
+    <script>
       // Burger menus
-      document.addEventListener('DOMContentLoaded', function() {
-          // open
-          const burger = document.querySelectorAll('.navbar-burger');
-          const menu = document.querySelectorAll('.navbar-menu');
-      
-          if (burger.length && menu.length) {
-              for (var i = 0; i < burger.length; i++) {
-                  burger[i].addEventListener('click', function() {
-                      for (var j = 0; j < menu.length; j++) {
-                          menu[j].classList.toggle('hidden');
-                      }
-                  });
-              }
-          }
-      
-          // close
-          const close = document.querySelectorAll('.navbar-close');
-          const backdrop = document.querySelectorAll('.navbar-backdrop');
-      
-          if (close.length) {
-              for (var i = 0; i < close.length; i++) {
-                  close[i].addEventListener('click', function() {
-                      for (var j = 0; j < menu.length; j++) {
-                          menu[j].classList.toggle('hidden');
-                      }
-                  });
-              }
-          }
-      
-          if (backdrop.length) {
-              for (var i = 0; i < backdrop.length; i++) {
-                  backdrop[i].addEventListener('click', function() {
-                      for (var j = 0; j < menu.length; j++) {
-                          menu[j].classList.toggle('hidden');
-                      }
-                  });
-              }
-          }
-      });
-      </script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // open
+        const burger = document.querySelectorAll(".navbar-burger");
+        const menu = document.querySelectorAll(".navbar-menu");
 
+        if (burger.length && menu.length) {
+          for (var i = 0; i < burger.length; i++) {
+            burger[i].addEventListener("click", function () {
+              for (var j = 0; j < menu.length; j++) {
+                menu[j].classList.toggle("hidden");
+              }
+            });
+          }
+        }
+
+        // close
+        const close = document.querySelectorAll(".navbar-close");
+        const backdrop = document.querySelectorAll(".navbar-backdrop");
+
+        if (close.length) {
+          for (var i = 0; i < close.length; i++) {
+            close[i].addEventListener("click", function () {
+              for (var j = 0; j < menu.length; j++) {
+                menu[j].classList.toggle("hidden");
+              }
+            });
+          }
+        }
+
+        if (backdrop.length) {
+          for (var i = 0; i < backdrop.length; i++) {
+            backdrop[i].addEventListener("click", function () {
+              for (var j = 0; j < menu.length; j++) {
+                menu[j].classList.toggle("hidden");
+              }
+            });
+          }
+        }
+      });
+    </script>
   </head>
   <body>
     <!-- NAVBAR COMPONENT -->
     <nav class="relative px-4 py-4 flex justify-between items-center bg-white">
-    
-      <img class="w-16" src="LOGO.jpg" alt="INTERPREP" />
-      <a href="INDEX.HTML" class="flex items-center">
-        &nbsp;  <span class="self-center whitespace-nowrap text-xl font-semibold">INTERPREP</span>
+      <a href="index.html"
+        ><img class="w-16 rounded-full" src="ip logo.png" alt="INTERPREP"
+      /></a>
+      <a href="index.html" class="flex items-center">
+        &nbsp; &nbsp; &nbsp;
+        <span class="self-center whitespace-nowrap text-xl font-semibold"
+          >INTERPREP</span
+        >
       </a>
       <div class="lg:hidden">
         <button class="navbar-burger flex items-center text-blue-600 p-3">
-          <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <svg
+            class="block h-4 w-4 fill-current"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
             <title>Mobile menu</title>
             <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
           </svg>
         </button>
       </div>
-      <a class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-gray-50 hover:bg-gray-100 text-sm text-gray-900 font-bold  rounded-xl transition duration-200" href="INDEX.HTML">HOME</a> &nbsp;
-      <a class="hidden lg:inline-block py-2 px-6 bg-blue-500 hover:bg-blue-600 text-sm text-white font-bold rounded-xl transition duration-200" href="TRAINING.HTML">TRAINING</a>&nbsp;
-      <a class="hidden lg:inline-block py-2 px-6 bg-blue-500 hover:bg-blue-600 text-sm text-white font-bold rounded-xl transition duration-200" href="COURSE.HTML">COURSES</a> &nbsp;
-      <a class="hidden lg:inline-block py-2 px-6 bg-blue-500 hover:bg-blue-600 text-sm text-white font-bold rounded-xl transition duration-200" href="CONTACT.HTML">CONTACT</a>
+      <a
+        class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-gray-50 hover:bg-gray-100 text-sm text-gray-900 font-bold rounded-xl transition duration-200"
+        href="index.html"
+        >HOME</a
+      >
+      &nbsp;
+      <a
+        class="hidden lg:inline-block py-2 px-6 bg-blue-500 hover:bg-blue-600 text-sm text-white font-bold rounded-xl transition duration-200"
+        href="training.html"
+        >TRAINING</a
+      >&nbsp;
+      <a
+        class="hidden lg:inline-block py-2 px-6 bg-blue-500 hover:bg-blue-600 text-sm text-white font-bold rounded-xl transition duration-200"
+        href="course.html"
+        >COURSES</a
+      >
+      &nbsp;
+      <a
+        class="hidden lg:inline-block py-2 px-6 bg-blue-500 hover:bg-blue-600 text-sm text-white font-bold rounded-xl transition duration-200"
+        href="contact.html"
+        >CONTACT</a
+      >
       <!-- <a class="hidden lg:inline-block py-2 px-6 bg-blue-500 hover:bg-blue-600 text-sm text-white font-bold rounded-xl transition duration-200" href="#">Sign up</a> -->
     </nav>
     <div class="navbar-menu relative z-50 hidden">
       <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
-      <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
+      <nav
+        class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto"
+      >
         <div class="flex items-center mb-8">
-          <img class="w-16" src="LOGO.jpg" alt="" />
-          <a href="INDEX.HTML" class="flex items-center">
-            <span class="self-center whitespace-nowrap text-xl font-semibold">INTERPREP</span>
+          <a href="index.html">
+            <img class="w-16 roundeed-full" src="ip logo.png" alt="INTERPREP"
+          /></a>
+          <a href="index.html" class="flex items-center">
+            &nbsp; &nbsp;
+            <span class="self-center whitespace-nowrap text-xl font-semibold"
+              >INTERPREP</span
+            >
           </a>
+          &nbsp; &nbsp;
           <button class="navbar-close">
-            <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            <svg
+              class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
             </svg>
           </button>
         </div>
         <div>
           <ul>
             <li class="mb-1">
-              <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="INDEX.HTML">Home</a>
+              <a
+                class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+                href="index.html"
+                >HOME</a
+              >
             </li>
             <li class="mb-1">
-              <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="TRAINING.HTML">Training</a>
+              <a
+                class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+                href="training.html"
+                >TRAINING</a
+              >
             </li>
             <li class="mb-1">
-              <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="COURSE.HTML">Courses</a>
+              <a
+                class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+                href="course.html"
+                >COURSES</a
+              >
             </li>
             <li class="mb-1">
-              <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="CONTACT.HTML">Contact</a>
+              <a
+                class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+                href="contact.html"
+                >CONTACT</a
+              >
             </li>
           </ul>
         </div>
         <div class="mt-auto">
           <p class="my-4 text-xs text-center text-gray-400">
-            <span>Copyright © 2023</span>
+            <span>Copyright © 2024</span>
           </p>
         </div>
       </nav>
     </div>
-  
-    
-    <br>
-    
-     <!-- CARASOUL  -->
-<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
-  <script>
-    var cont=0;
-function loopSlider(){
-  var xx= setInterval(function(){
-        switch(cont)
-        {
-        case 0:{
-            $("#slider-1").fadeOut(400);
-            $("#slider-2").delay(400).fadeIn(400);
-            $("#sButton1").removeClass("bg-purple-800");
-            $("#sButton2").addClass("bg-purple-800");
-        cont=1;
-        
-        break;
-        }
-        case 1:
-        {
-        
-            $("#slider-2").fadeOut(400);
-            $("#slider-1").delay(400).fadeIn(400);
-            $("#sButton2").removeClass("bg-purple-800");
-            $("#sButton1").addClass("bg-purple-800");
-           
-        cont=0;
-        
-        break;
-        }
-        
-        
-        }},8000);
+    <br />
+    <!-- CARASOUL  -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script>
+      var cont = 0;
+      function loopSlider() {
+        var xx = setInterval(function () {
+          switch (cont) {
+            case 0: {
+              $("#slider-1").fadeOut(400);
+              $("#slider-2").delay(400).fadeIn(400);
+              $("#sButton1").removeClass("bg-purple-800");
+              $("#sButton2").addClass("bg-purple-800");
+              cont = 1;
+              break;
+            }
+            case 1: {
+              $("#slider-2").fadeOut(400);
+              $("#slider-1").delay(400).fadeIn(400);
+              $("#sButton2").removeClass("bg-purple-800");
+              $("#sButton1").addClass("bg-purple-800");
 
-}
-
-function reinitLoop(time){
-clearInterval(xx);
-setTimeout(loopSlider(),time);
-}
-
-
-
-function sliderButton1(){
-
-    $("#slider-2").fadeOut(400);
-    $("#slider-1").delay(400).fadeIn(400);
-    $("#sButton2").removeClass("bg-purple-800");
-    $("#sButton1").addClass("bg-purple-800");
-    reinitLoop(4000);
-    cont=0
-    
-    }
-    
-    function sliderButton2(){
-    $("#slider-1").fadeOut(400);
-    $("#slider-2").delay(400).fadeIn(400);
-    $("#sButton1").removeClass("bg-purple-800");
-    $("#sButton2").addClass("bg-purple-800");
-    reinitLoop(4000);
-    cont=1
-    
-    }
-
-    $(window).ready(function(){
+              cont = 0;
+              break;
+            }
+          }
+        }, 8000);
+      }
+      function reinitLoop(time) {
+        clearInterval(xx);
+        setTimeout(loopSlider(), time);
+      }
+      function sliderButton1() {
+        $("#slider-2").fadeOut(400);
+        $("#slider-1").delay(400).fadeIn(400);
+        $("#sButton2").removeClass("bg-purple-800");
+        $("#sButton1").addClass("bg-purple-800");
+        reinitLoop(4000);
+        cont = 0;
+      }
+      function sliderButton2() {
+        $("#slider-1").fadeOut(400);
+        $("#slider-2").delay(400).fadeIn(400);
+        $("#sButton1").removeClass("bg-purple-800");
+        $("#sButton2").addClass("bg-purple-800");
+        reinitLoop(4000);
+        cont = 1;
+      }
+      $(window).ready(function () {
         $("#slider-2").hide();
         $("#sButton1").addClass("bg-purple-800");
-        
-
         loopSlider();
-     
-        
-    
-    
-    
-    
-    });
-
-  
-  </script>
-  <div class="sliderAx h-auto">
+      });
+    </script>
+    <div class="sliderAx h-auto">
       <div id="slider-1" class="container mx-auto">
-        <div class="bg-cover bg-center  h-auto text-white py-24 px-10 object-fill" style="background-image: url(https://images.unsplash.com/photo-1544427920-c49ccfb85579?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1422&q=80)">
-       <div class="md:w-1/2">
-        <!-- <p class="font-bold text-sm uppercase">Services</p> -->
-        <p class="text-3xl font-bold">Courses</p>
-        <p class="text-2xl mb-10 leading-none">Click on button to view all courses</p>
-        <a href="COURSE.HTML" class="bg-purple-800 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800">COURSE</a>
-        </div>  
-    </div> <!-- container -->
-      <br>
+        <div
+          class="bg-cover bg-center h-auto text-white py-24 px-10 object-fill"
+          style="
+            background-image: url(https://images.unsplash.com/photo-1544427920-c49ccfb85579?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1422&q=80);
+          "
+        >
+          <div class="md:w-1/2">
+            <!-- <p class="font-bold text-sm uppercase">Services</p> -->
+            <p class="text-3xl font-bold">Courses</p>
+            <p class="text-2xl mb-10 leading-none">
+              Click on button to view all courses
+            </p>
+            <a
+              href="COURSE.HTML"
+              class="bg-purple-800 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800"
+              >COURSE</a
+            >
+          </div>
+        </div>
+        <!-- container -->
+        <br />
       </div>
 
       <div id="slider-2" class="container mx-auto">
-        <div class="bg-cover bg-top  h-auto text-white py-24 px-10 object-fill" style="background-image: url(https://images.unsplash.com/photo-1544144433-d50aff500b91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80)">
-       
-        <!-- <p class="font-bold text-sm uppercase">Services</p> -->
-        <p class="text-3xl font-bold">Online training</p>
-        <p class="text-2xl mb-10 leading-none">Click on button for online training</p>
-        <a href="TRAINING.HTML" class="bg-purple-800 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800">Training</a>
-         
-    </div> <!-- container -->
-      <br>
+        <div
+          class="bg-cover bg-top h-auto text-white py-24 px-10 object-fill"
+          style="
+            background-image: url(https://images.unsplash.com/photo-1544144433-d50aff500b91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+          "
+        >
+          <!-- <p class="font-bold text-sm uppercase">Services</p> -->
+          <p class="text-3xl font-bold">Online training</p>
+          <p class="text-2xl mb-10 leading-none">
+            Click on button for online training
+          </p>
+          <a
+            href="TRAINING.HTML"
+            class="bg-purple-800 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800"
+            >Training</a
+          >
+        </div>
+        <!-- container -->
+        <br />
       </div>
     </div>
- <div  class="flex justify-between w-12 mx-auto pb-2">
-        <button id="sButton1" onclick="sliderButton1()" class="bg-purple-400 rounded-full w-4 pb-2 " ></button>
-    <button id="sButton2" onclick="sliderButton2() " class="bg-purple-400 rounded-full w-4 p-2"></button>
-  </div>
-<!-- END OF CARASOUL -->
-       <!--TEAM  component -->
-<div class="py-20 bg-gray-50">
-  <div class="container mx-auto px-6 md:px-12 xl:px-32">
-      <div class="mb-16 text-center">
-          <h2 class="mb-4 text-center text-2xl text-gray-900 font-bold md:text-4xl">OUR TEAM MEMBERS</h2>
-          <!-- <p class="text-gray-600 lg:w-8/12 lg:mx-auto">Tailus prides itself not only on award-winning technology, but also on the talent of its people of some of the brightest minds and most experienced executives in business.</p>
-      </div> -->
-      <div class="grid gap-12 items-center md:grid-cols-3">
-          <div class="space-y-4 text-center">
-              <img class="w-64 h-64 mx-auto object-cover rounded-xl md:w-40 md:h-40 lg:w-64 lg:h-64" 
-                  src="mukund1.jpg" alt="mukund's pic" loading="lazy" width="640" height="805">
-              <div>
-                  <h4 class="text-2xl">Mukund kumar</h4>
-                  <span class="block text-sm text-gray-500">CEO-Founder</span>
-                  <span class="block text-sm text-gray-500">Web Developer</span>
-              </div>
+    <div class="flex justify-between w-12 mx-auto pb-2">
+      <button
+        id="sButton1"
+        onclick="sliderButton1()"
+        class="bg-purple-400 rounded-full w-4 pb-2"
+      ></button>
+      <button
+        id="sButton2"
+        onclick="sliderButton2() "
+        class="bg-purple-400 rounded-full w-4 p-2"
+      ></button>
+    </div>
+    <!-- END OF CARASOUL -->
+
+    <!-- ADMISSION FORM  -->
+    <div
+      class="min-h-screen bg-gray-800 py-6 flex flex-col justify-center sm:py-12"
+    >
+      <div class="relative py-3 sm:max-w-xl sm:mx-auto">
+        <div
+          class="absolute inset-0 bg-gradient-to-r from-indigo-700 to-purple-500 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl"
+        ></div>
+        <div
+          class="text-white relative px-4 py-10 bg-indigo-400 shadow-lg sm:rounded-3xl sm:p-20"
+        >
+          <div class="text-center pb-6">
+            <h1 class="text-3xl">ADMISSION FORM</h1>
+
+            <p class="text-gray-300">
+              Kindly fill this form to enroll in JAVA class.
+            </p>
           </div>
-          <div class="space-y-4 text-center">
-            <img class="w-64 h-64 mx-auto object-cover rounded-xl md:w-40 md:h-40 lg:w-64 lg:h-64" 
-                src="rohit.jpg" alt="rohit's pic" loading="lazy" width="1000" height="667">
-            <div>
-                <h4 class="text-2xl">Rohit Kumar Thakur</h4>
-                <span class="block text-sm text-gray-500">chief Marketing Officer</span>
+
+          <form action="/admissionForm/" data-netlify="true">
+            <input
+              class="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              type="text"
+              placeholder="Name"
+              name="name"
+            />
+
+            <input
+              class="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              type="email"
+              placeholder="Email"
+              name="email"
+            />
+
+            <input
+              class="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              type="number"
+              placeholder="Contact no."
+              name="contact"
+            />
+
+            <input
+              class="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              type="text"
+              placeholder="Referral code"
+              name="refcode"
+            />
+
+            <textarea
+              class="shadow mb-4 min-h-0 appearance-none border rounded h-64 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              type="text"
+              placeholder="Type your message here..."
+              name="message"
+              style="height: 121px"
+            ></textarea>
+
+            <div class="flex justify-between">
+              <input
+                class="shadow bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                type="submit"
+                value="Send ➤"
+              />
+              <input
+                class="shadow bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                type="reset"
+              />
             </div>
+          </form>
         </div>
-        <div class="space-y-4 text-center">
-          <img class="w-64 h-64 mx-auto object-cover rounded-xl md:w-40 md:h-40 lg:w-64 lg:h-64" 
-              src="sameer.jpg" alt="Sameer's pic" loading="lazy" width="640" height="805">
-          <div>
-              <h4 class="text-2xl">Sameer kumar</h4>
-              <span class="block text-sm text-gray-500">Business Development Executive</span>
-             
+      </div>
+    </div>
+    <!-- END OF ADMISSION FORM  -->
+    <!-- 
+    <link
+      rel="stylesheet"
+      href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+
+    <!-- GROWING COMP  -->
+    <section class="relative pt-12 bg-blueGray-50">
+      <div class="items-center flex flex-wrap">
+        <div class="w-full md:w-4/12 ml-auto mr-auto px-4">
+          <img
+            alt="..."
+            class="max-w-full rounded-lg shadow-lg"
+            src="https://images.unsplash.com/photo-1555212697-194d092e3b8f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=634&amp;q=80"
+          />
+        </div>
+        <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
+          <div class="md:pr-12">
+            <div
+              class="text-pink-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-pink-300 mt-8"
+            >
+              <i class="fas fa-rocket text-xl"></i>
+            </div>
+            <h3 class="text-3xl font-semibold">A growing company</h3>
+            <p class="mt-4 text-lg leading-relaxed text-blueGray-500">
+              We are offering a varities of courses for an interview , a coined
+              collection of programming courses & aptitude and reasoning
+              courses. Having one to one doubt solving session, Mock test and
+              virtual interview, etc. . Let us know if your are interested &
+              looking forward to any of these courses.
+            </p>
+            <ul class="list-none mt-6">
+              <li class="py-2">
+                <div class="flex items-center">
+                  <div>
+                    <span
+                      class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3"
+                      ><i class="fas fa-fingerprint"></i
+                    ></span>
+                  </div>
+                  <div>
+                    <h4 class="text-blueGray-500">
+                      Carefully crafted components
+                    </h4>
+                  </div>
+                </div>
+              </li>
+              <li class="py-2">
+                <div class="flex items-center">
+                  <div>
+                    <span
+                      class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3"
+                      ><i class="fab fa-html5"></i
+                    ></span>
+                  </div>
+                  <div>
+                    <h4 class="text-blueGray-500">Amazing page</h4>
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
+        </div>
       </div>
+    </section>
+    <!-- GROWING COMP  -->
+    <br />
+    <!-- NEW LAUNCH  -->
+    <div class="bg-gray-900 py-8">
+      <div class="container mx-auto px-2">
+        <h2 class="text-3xl font-bold text-white mb-4">
+          Introducing Our Upcoming Courses
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div class="bg-white rounded-lg shadow-lg p-4">
+            <div class="relative overflow-hidden">
+              <img
+                class="object-cover w-full h-full"
+                src="javaimg.jpg"
+                alt="java"
+              />
+              <div class="absolute inset-0 bg-black opacity-40"></div>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mt-4">JAVA</h3>
+          </div>
+          <div class="bg-white rounded-lg shadow-lg p-4">
+            <div class="relative overflow-hidden">
+              <img class="object-cover w-full h-full" src="c++.jpg" alt="C++" />
+              <div class="absolute inset-0 bg-black opacity-40"></div>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mt-4">C++</h3>
+          </div>
+          <div class="bg-white rounded-lg shadow-lg p-4">
+            <div class="relative overflow-hidden">
+              <img
+                class="object-cover w-full h-full"
+                src="python.png"
+                alt="Product"
+              />
+              <div class="absolute inset-0 bg-black opacity-40"></div>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mt-4">PYTHON</h3>
+          </div>
+        </div>
       </div>
-  </div>
-</div>
-<!-- END OF TEAM COMPONENT  -->
-     <!-- component -->
-     <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css">
-     <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
-     
-     
-     <section class="relative pt-12 bg-blueGray-50">
-     <div class="items-center flex flex-wrap">
-       <div class="w-full md:w-4/12 ml-auto mr-auto px-4">
-         <img alt="..." class="max-w-full rounded-lg shadow-lg" src="https://images.unsplash.com/photo-1555212697-194d092e3b8f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=634&amp;q=80">
-       </div>
-       <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
-         <div class="md:pr-12">
-           <div class="text-pink-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-pink-300 mt-8">
-             <i class="fas fa-rocket text-xl"></i>
-           </div>
-           <h3 class="text-3xl font-semibold">A growing company</h3>
-           <p class="mt-4 text-lg leading-relaxed text-blueGray-500">
-             We are offering a varities of courses for an interview , a coined collection of programming courses & aptitude and reasoning courses. Having one to one doubt
-             solving session, Mock test and virtual interview, etc. . Let us know if your are interested & looking forward to any of these courses.
-           </p>
-           <ul class="list-none mt-6">
-             <li class="py-2">
-               <div class="flex items-center">
-                 <div>
-                   <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3"><i class="fas fa-fingerprint"></i></span>
-                 </div>
-                 <div>
-                   <h4 class="text-blueGray-500">
-                     Carefully crafted components
-                   </h4>
-                 </div>
-               </div>
-             </li>
-             <li class="py-2">
-               <div class="flex items-center">
-                 <div>
-                   <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3"><i class="fab fa-html5"></i></span>
-                 </div>
-                 <div>
-                   <h4 class="text-blueGray-500">Amazing page</h4>
-                 </div>
-               </div>
-             </li>
-             
-           </ul>
-         </div>
-       </div>
-     </div>
-      <!-- FAQ  -->
-<!-- component -->
-<div>
+    </div>
+    <!-- END OF LAUNCH  -->
+
+    <!-- FAQ  -->
+    <div>
       <section class="text-gray-700">
-        <div class="container px-5 py-24 mx-auto">
-          <div class="text-center mb-20">
-            <h1 class="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4">
+        <div class="container px-5 py-8 mx-auto">
+          <div class="text-center mb-5">
+            <h1
+              class="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4"
+            >
               Frequently Asked Question
             </h1>
             <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
@@ -325,12 +488,12 @@ function sliderButton1(){
           <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
             <div class="w-full lg:w-1/2 px-4 py-2">
               <details class="mb-4">
-                <summary class="font-semibold  bg-gray-200 rounded-md py-2 px-4">
+                <summary class="font-semibold bg-gray-200 rounded-md py-2 px-4">
                   How Long is this site live?
                 </summary>
 
                 <span>
-                 This site lives for as far we get response from our students. 
+                  This site lives for as far we get response from our students.
                 </span>
               </details>
               <details class="mb-4">
@@ -338,42 +501,41 @@ function sliderButton1(){
                   Can I install/upload anything I want on there?
                 </summary>
 
-                <span>
-                 Yes, for this you need permission from admin.
-                </span>
+                <span> Yes, for this you need permission from admin. </span>
               </details>
               <details class="mb-4">
-                <summary class="font-semibold  bg-gray-200 rounded-md py-2 px-4">
+                <summary class="font-semibold bg-gray-200 rounded-md py-2 px-4">
                   How can I migrate to another site?
                 </summary>
 
                 <span>
-                 You don't need to migrate from this site, we will try to provide all
-                 the necessary materials here.
+                  You don't need to migrate from this site, we will try to
+                  provide all the necessary materials here.
                 </span>
               </details>
             </div>
             <div class="w-full lg:w-1/2 px-4 py-2">
               <details class="mb-4">
-                <summary class="font-semibold  bg-gray-200 rounded-md py-2 px-4">
+                <summary class="font-semibold bg-gray-200 rounded-md py-2 px-4">
                   Courses are free or paid ?
                 </summary>
-
                 <span class="px-4 py-2">
-                 Till now all the courses are free.
+                  Till now all the courses are free except
+                  <strong>Java</strong>.
                 </span>
               </details>
               <details class="mb-4">
-                <summary class="font-semibold  bg-gray-200 rounded-md py-2 px-4">
-                 What are the courses that are being offered here ?
+                <summary class="font-semibold bg-gray-200 rounded-md py-2 px-4">
+                  What are the courses that are being offered here ?
                 </summary>
 
                 <span class="px-4 py-2">
-                 Some programming languages like C,C++,JAVA, etc & aptitude & reasoning
+                  Some programming languages like C,C++,JAVA, etc & aptitude &
+                  reasoning
                 </span>
               </details>
               <details class="mb-4">
-                <summary class="font-semibold  bg-gray-200 rounded-md py-2 px-4">
+                <summary class="font-semibold bg-gray-200 rounded-md py-2 px-4">
                   How can I communicate with you?
                 </summary>
 
@@ -386,14 +548,13 @@ function sliderButton1(){
         </div>
       </section>
     </div>
-      <!-- END OF FAQ  -->
-    <!-- TESTIMONIALS -->
-    
-    <!-- component -->
+    <!-- END OF FAQ  -->
+
+    <!-- STAT -->
     <section class="text-gray-600 body-font">
-      <div class="container px-5 py-24 mx-auto">
-        <div class="flex flex-wrap w-full mb-8">
-          <div class="w-full mb-6 lg:mb-0">
+      <div class="container px-3 py-1 mx-auto">
+        <div class="flex flex-wrap w-full mb-1">
+          <div class="w-full mb-3 lg:mb-0">
             <h1
               class="sm:text-4xl text-5xl font-medium title-font mb-2 text-gray-900"
             >
@@ -438,7 +599,7 @@ function sliderButton1(){
               <h2
                 class="title-font font-medium sm:text-4xl text-3xl text-white"
               >
-                10+ 
+                10+
               </h2>
               <p class="leading-relaxed text-gray-100 font-bold">Courses</p>
             </div>
@@ -448,30 +609,41 @@ function sliderButton1(){
     </section>
     <!-- END OF STAT  -->
     <!-- FOOTER--->
-<section class="bg-white">
-  <div class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
-      <nav class="flex flex-wrap justify-center -mx-5 -my-2">
+    <section class="bg-white">
+      <div
+        class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8"
+      >
+        <nav class="flex flex-wrap justify-center -mx-5 -my-2">
           <div class="px-5 py-2">
-              <a href="TRAINING.HTML" class="text-base leading-6 text-gray-500 hover:text-gray-900">
-                  Training
-              </a>
+            <a
+              href="training.html"
+              class="text-base leading-6 text-gray-500 hover:text-gray-900"
+            >
+              Training
+            </a>
           </div>
           <div class="px-5 py-2">
-              <a href="COURSE.HTML" class="text-base leading-6 text-gray-500 hover:text-gray-900">
-                  Courses
-              </a>
+            <a
+              href="course.html"
+              class="text-base leading-6 text-gray-500 hover:text-gray-900"
+            >
+              Courses
+            </a>
           </div>
           <div class="px-5 py-2">
-              <a href="CONTACT.HTML" class="text-base leading-6 text-gray-500 hover:text-gray-900">
-                  Contact
-              </a>
+            <a
+              href="contact.html"
+              class="text-base leading-6 text-gray-500 hover:text-gray-900"
+            >
+              Contact
+            </a>
           </div>
-      </nav>
-      <p class="mt-8 text-base leading-6 text-center text-gray-400">
-          © 2023 INTERPREP, Inc. All rights reserved.
-      </p>
-  </div>
-</section>
-<!-- END OF FOOTER  -->
+        </nav>
+        <p class="mt-8 text-base leading-6 text-center text-gray-400">
+          © 2024 INTERPREP, Inc. All rights reserved.
+        </p>
+      </div>
+    </section>
+    <!-- END OF FOOTER  -->
   </body>
 </html>
