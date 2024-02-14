@@ -285,47 +285,9 @@
       ></button>
     </div>
     <!-- END OF CARASOUL -->
-    <!--TEAM  component -->
-    <!-- <div class="py-20 bg-gray-50">
-  <div class="container mx-auto px-6 md:px-12 xl:px-32">
-      <div class="mb-16 text-center">
-          <h2 class="mb-4 text-center text-2xl text-gray-900 font-bold md:text-4xl">OUR TEAM MEMBERS</h2>
-           <p class="text-gray-600 lg:w-8/12 lg:mx-auto">Tailus prides itself not only on award-winning technology, but also on the talent of its people of some of the brightest minds and most experienced executives in business.</p>
-      </div> 
-      <div class="grid gap-12 items-center md:grid-cols-3">
-          <div class="space-y-4 text-center">
-              <img class="w-64 h-64 mx-auto object-cover rounded-xl md:w-40 md:h-40 lg:w-64 lg:h-64" 
-                  src="mukund1.jpg" alt="mukund's pic" loading="lazy" width="640" height="805">
-              <div>
-                  <h4 class="text-2xl">Mukund kumar</h4>
-                  <span class="block text-sm text-gray-500">CEO-Founder</span>
-                  <span class="block text-sm text-gray-500">Web Developer</span>
-              </div>
-          </div>
-          <div class="space-y-4 text-center">
-            <img class="w-64 h-64 mx-auto object-cover rounded-xl md:w-40 md:h-40 lg:w-64 lg:h-64" 
-                src="rohit.jpg" alt="rohit's pic" loading="lazy" width="1000" height="667">
-            <div>
-                <h4 class="text-2xl">Rohit Kumar Thakur</h4>
-                <span class="block text-sm text-gray-500">chief Marketing Officer</span>
-            </div>
-        </div>
-        <div class="space-y-4 text-center">
-          <img class="w-64 h-64 mx-auto object-cover rounded-xl md:w-40 md:h-40 lg:w-64 lg:h-64" 
-              src="sameer.jpg" alt="Sameer's pic" loading="lazy" width="640" height="805">
-          <div>
-              <h4 class="text-2xl">Sameer kumar</h4>
-              <span class="block text-sm text-gray-500">Business Development Executive</span>
-             
-          </div>
-      </div>
-      </div>
-  </div>
-</div> -->
-    <!-- END OF TEAM COMPONENT  -->
 
     <!-- ADMISSION FORM  -->
-    <div
+  <div
       class="min-h-screen bg-gray-800 py-6 flex flex-col justify-center sm:py-12"
     >
       <div class="relative py-3 sm:max-w-xl sm:mx-auto">
@@ -344,20 +306,37 @@
           </div>
 
           <form action="/admissionForm/" data-netlify="true">
-            <input
-              class="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-              type="text"
-              placeholder="Name"
-              name="name"
-            />
+            <div class="mb-5">
+              <label
+                for="name"
+                class="mb-3 block text-base font-medium text-[#07074D]"
+              >
+                Your Name
+              </label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Enter your name"
+                class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+              />
+            </div>
+            <div class="mb-5">
+              <label
+                for="email"
+                class="mb-3 block text-base font-medium text-[#07074D]"
+              >
+                Email Address
+              </label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="example@domain.com"
+                class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+              />
+            </div>
 
-            <input
-              class="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-              type="email"
-              placeholder="Email"
-              name="email"
-            />
-            
             <div class="mb-5">
               <label for="number" class="mb-3 block text-base font-medium text-[#07074D]">
                 Contact no    </label>
@@ -369,6 +348,21 @@
                   class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
                 />
              </label>
+            </div>
+            <div class="mb-5">
+              <label
+                for="refcode"
+                class="mb-3 block text-base font-medium text-[#07074D]"
+              >
+                Referal Code
+              </label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Enter your name"
+                class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+              />
             </div>
             <div class="mb-5">
               <label
@@ -417,11 +411,6 @@
         </div>
       </div>
     </div>    <!-- END OF ADMISSION FORM  -->
-    <!-- 
-    <link
-      rel="stylesheet"
-      href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css"
-    /> -->
     <link
       rel="stylesheet"
       href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css"
